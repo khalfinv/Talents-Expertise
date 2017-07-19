@@ -1,0 +1,22 @@
+
+   <div class="nav-bar">
+    <div class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+      <div class="container-2 w-container">
+        <a class="w-nav-brand" href="#"></a>
+        <nav class="nav-bar-right " role="navigation" >
+          <a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/about']" >אודות</a>
+          <a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/contact']">צור קשר</a>
+          <a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/career-dev']" >פיתוח קריירה</a>
+          <a class="nav-link" >אני מגייס</a>
+          <a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/search-job']" >חיפוש עבודה</a>
+          <a class="nav-link" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/']" >דף הבית</a>
+        </nav>
+        <nav class="nav-bar-left " role="navigation" >
+          <a class="nav-link" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" href="#">התנתק</a>
+          <a class="nav-link" *ngIf="authService.loggedIn()" (click)="goToProfile()" >פרופיל</a>
+          <a class="nav-link" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/register']" >הרשמה</a>
+          <a class="nav-link" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/login']" >כניסה</a>      
+        </nav>
+      </div>
+    </div>
+   </div>

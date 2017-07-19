@@ -1,0 +1,124 @@
+
+
+  <div class="wrapper-who-is" *ngIf="showWrapperWho">
+    <div class="whois-block"><a class="i-am-hiring-button w-button" (click) = "(showRecruiterWrapper = true) && (isCompany = true)">אני מגייס</a><a class="looking-for-a-job-button w-button" (click) = "(showCandidateWrapper = true) && (isCompany = false)">אני מחפש עבודה</a>
+    </div>
+  </div>
+  <div class="candidate-wrapper" *ngIf="showCandidateWrapper">
+    <div class="candidate-form">
+      <div class="form-block-2 w-form">
+        <div class = "alert danger">
+          <flash-messages></flash-messages>
+        </div>
+        <form (submit)= "onRegisterSubmit()" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="my-close-link" (click) = "onSignUpClose()">סגירה &nbsp; X</div>
+          <input class="w-input" [(ngModel)]="name" name="name" data-name="שם מלא" id="node-2" maxlength="256" placeholder="שם מלא"  type="text">
+          <input class="w-input" [(ngModel)]="email" name="email" data-name="מייל" id="node-4" maxlength="256" placeholder="מייל"  type="text">
+          <input class="w-input" [(ngModel)]="password" name="password" data-name="סיסמה" id="node-5" maxlength="256" placeholder="סיסמה"  type="password">
+          <input class="submit-button-3 w-button" [disabled]="afterSubmit" type="submit" value={{submitText}} >
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="recruiter-sign-wrapper" *ngIf="showRecruiterWrapper">
+    <div class="recruiter-form">
+      <div class="form-block-2 w-form">
+        <div class = "alert danger">
+          <flash-messages></flash-messages>
+        </div>
+        <form (submit)= "onRegisterSubmit()" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="close-link" (click) = "onSignUpClose()">סגירה &nbsp; X</div>
+          <input class="w-input" [(ngModel)]="companyName" name="companyName" data-name="שם חברה" id="node" maxlength="256" placeholder="שם החברה " type="text">
+          <input class="w-input" [(ngModel)]="name" name="name" data-name="שם מלא" id="node-2" maxlength="256" placeholder="שם מלא"  type="text">
+          <input class="w-input" [(ngModel)]="email" name="email" data-name="מייל" id="node-4" maxlength="256" placeholder="מייל עיסקי"  type="text">
+          <input class="w-input" [(ngModel)]="password" name="password" data-name="סיסמה" id="node-5" maxlength="256" placeholder="סיסמה"  type="password">
+          <input class="submit-button-3 w-button" [disabled]="afterSubmit" type="submit" value={{submitText}} >
+        </form>
+      </div>
+    </div>
+  </div> 
+  <div class="hero-section">
+    <div class="hero-content">
+      <div class="hero-container w-container">
+        <h1 class="heading-7">פלטפורמה מהפכנית לחיפוש עבודה</h1>
+        <h2 class="heading-8">מבוססת בינה מלאכותית<br>המבצעת תהליך מותאם אישי לקורלציה מדויקת בין נתוני המועמד לבין ציפיות המגייס</h2>
+        <div class="sign-up-button-block"><a class="sign-up-button w-button" (click)= "showWrapperWho = true">הרשמה</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-section" id="Home-page-second-section">
+    <div class="container-5 w-container">
+      <h1 class="heading">אנונימיות מובטחת לאורך כל התהליך עד לחתימת החוזה</h1>
+    </div>
+  </div>
+  <div class="benefits-section">
+    <div class="w-container">
+      <div class="benefits-block">
+        <div class="div-block-2">
+          <h1 class="heading-4">שליטה</h1><img src="images/&#x5E9;&#x5DC;&#x5D9;&#x5D8;&#x5D4;.svg" width="175">
+          <div class="text-block-3">רק מועמד מחליט מתי לחשוף את השם מפני המעסיק</div>
+        </div>
+        <div class="div-block-3">
+          <h1 class="heading-3">נוחות</h1><img src="images/&#x5E0;&#x5D5;&#x5D7;&#x5D5;&#x5EA;.svg" width="176">
+          <div class="text-block-2">כל התהליך מתבצי אונליין ואתה יוצא מהבית רק כדי לחתום על חוזה</div>
+        </div>
+        <div class="div-block-4">
+          <h1 class="heading-2">מהירות</h1><img src="images/Group-282.svg" width="190">
+          <div class="text-block">השאיפה שלנו לסיים את כל התהליך בתוך שעה</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="subheading">
+    <h2 class="heading-6">4 שלבים פשוטים בדרך לעבודה הבאה שלך</h2>
+  </div>
+  <div class="process-description-block">
+    <div class="div-block-5"><img class="image" sizes="(max-width: 546px) 100vw, 546px" src="images/Asset-1.png" srcset="images/Asset-1-p-500.png 500w, images/Asset-1.png 546w">
+    </div>
+    <div class="_1-4">
+      <div class="_1">
+        <div><img src="images/Group-286.svg" width="60">
+        </div>
+        <div>
+          <div class="text-block-4">הרשמה</div>
+        </div>
+      </div>
+      <div class="_1">
+        <div><img src="images/Group-287.svg" width="60">
+        </div>
+        <div>
+          <div class="text-block-4">קבלת משרות תואמות</div>
+        </div>
+      </div>
+      <div class="_1">
+        <div><img src="images/Group-288.svg" width="64">
+        </div>
+        <div>
+          <div class="text-block-4">אבחון פסיכולוגי אונליין של חצי שעה</div>
+        </div>
+      </div>
+      <div class="_1">
+        <div><img src="images/Group-289.svg" width="60">
+        </div>
+        <div>
+          <div class="text-block-4">קבלת הצעת עבודה</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="website-map">
+      <div class="div-block-6"><a class="link" href="#">Text Link</a><a href="#">Text Link</a><a href="#">Text Link</a>
+      </div>
+      <div class="div-block-7"><a href="#">Text Link</a><a href="#">Text Link</a><a href="#">Text Link</a>
+      </div>
+      <div class="div-block-7"><a href="#">Text Link</a><a href="#">Text Link</a><a href="#">Text Link</a>
+      </div>
+      <div class="div-block-7"><a href="#">Text Link</a><a href="#">Text Link</a><a href="#">Text Link</a>
+      </div>
+      <div class="div-block-7"><a href="#">Text Link</a><a href="#">Text Link</a><a href="#">Text Link</a>
+      </div>
+    </div>
+    <div class="notes"></div>
+  </div>

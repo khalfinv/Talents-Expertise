@@ -1,0 +1,30 @@
+{
+  "name": "talent_expertise",
+  "version": "1.0.0",
+  "description": "HR platform",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app"
+  },
+  "dependencies":{
+    "express":"*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalfinv/Talent-Expertise.git"
+  },
+  "author": "Khalfin Victoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalfinv/Talent-Expertise/issues"
+  },
+  "homepage": "https://github.com/khalfinv/Talent-Expertise#readme"
+}
