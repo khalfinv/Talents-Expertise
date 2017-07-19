@@ -6,9 +6,10 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "../client",
+      "outDir": "../public",
       "assets": [
-        "favicon.ico"
+        "favicon.ico",
+        "images"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -17,7 +18,10 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "css/normalize.css",
+        "css/projectmockup.webflow.css",
+        "css/webflow.css"
       ],
       "scripts": [],
       "environments": {
