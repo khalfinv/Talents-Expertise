@@ -1,3 +1,15 @@
-<p>
-  login works!
-</p>
+  <div class="login-wrapper" *ngIf="this.globals.showLoginWrapper">
+    <div class="login-form">
+      <div class="form-block-2 w-form">
+        <div class = "alert danger">
+          <flash-messages></flash-messages>
+        </div>
+        <form (submit)= "onLoginSubmit()" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="my-close-link" (click) = "restoreToDefault()">סגירה &nbsp; X</div>
+          <input class="w-input" [(ngModel)]="email" name="email" data-name="מייל" id="node-4" maxlength="256" placeholder="מייל"  type="text">
+          <input class="w-input" [(ngModel)]="password" name="password" data-name="סיסמה" id="node-5" maxlength="256" placeholder="סיסמה"  type="password">
+          <input class="submit-button-3 w-button" [disabled]="afterSubmit" type="submit" value={{submitText}} >
+        </form>
+      </div>
+    </div>
+  </div>

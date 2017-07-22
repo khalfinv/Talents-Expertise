@@ -12,9 +12,9 @@
         </nav>
         <nav class="nav-bar-left " role="navigation" >
           <a class="nav-link" *ngIf="authService.loggedIn()" (click)="onLogoutClick()" href="#">התנתק</a>
-          <a class="nav-link" *ngIf="authService.loggedIn()" (click)="goToProfile()" >פרופיל</a>
-          <a class="nav-link" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/register']" >הרשמה</a>
-          <a class="nav-link" *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}" [routerLink]="['/login']" >כניסה</a>      
+          <a class="nav-link" *ngIf="authService.loggedIn()" (click)="this.globals.goToProfile()" >פרופיל</a>
+          <a class="nav-link" *ngIf="!authService.loggedIn()" (click) = "this.globals.showWrapperWho = true" >הרשמה</a>
+          <a class="nav-link" *ngIf="!authService.loggedIn()" (click) = "this.globals.showLoginWrapper = true" >כניסה</a>      
         </nav>
       </div>
     </div>

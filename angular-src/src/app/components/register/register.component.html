@@ -1,0 +1,37 @@
+  <div class="wrapper-who-is" *ngIf="this.globals.showWrapperWho">
+    <div class="whois-block"><a class="i-am-hiring-button w-button" (click) = "(showRecruiterWrapper = true) && (isCompany = true)">אני מגייס</a><a class="looking-for-a-job-button w-button" (click) = "(showCandidateWrapper = true) && (isCompany = false)">אני מחפש עבודה</a>
+    </div>
+  </div>
+  <div class="candidate-wrapper" *ngIf="showCandidateWrapper">
+    <div class="candidate-form">
+      <div class="form-block-2 w-form">
+        <div class = "alert danger">
+          <flash-messages></flash-messages>
+        </div>
+        <form (submit)= "onRegisterSubmit()" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="my-close-link" (click) = "restoreToDefault()">סגירה &nbsp; X</div>
+          <input class="w-input" [(ngModel)]="name" name="name" data-name="שם מלא" id="node-2" maxlength="256" placeholder="שם מלא"  type="text">
+          <input class="w-input" [(ngModel)]="email" name="email" data-name="מייל" id="node-4" maxlength="256" placeholder="מייל"  type="text">
+          <input class="w-input" [(ngModel)]="password" name="password" data-name="סיסמה" id="node-5" maxlength="256" placeholder="סיסמה"  type="password">
+          <input class="submit-button-3 w-button" [disabled]="afterSubmit" type="submit" value={{submitText}} >
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="recruiter-sign-wrapper" *ngIf="showRecruiterWrapper">
+    <div class="recruiter-form">
+      <div class="form-block-2 w-form">
+        <div class = "alert danger">
+          <flash-messages></flash-messages>
+        </div>
+        <form (submit)= "onRegisterSubmit()" data-name="Email Form 2" id="email-form-2" name="email-form-2">
+          <div class="my-close-link" (click) = "restoreToDefault()">סגירה &nbsp; X</div>
+          <input class="w-input" [(ngModel)]="companyName" name="companyName" data-name="שם חברה" id="node" maxlength="256" placeholder="שם החברה " type="text">
+          <input class="w-input" [(ngModel)]="name" name="name" data-name="שם מלא" id="node-2" maxlength="256" placeholder="שם מלא"  type="text">
+          <input class="w-input" [(ngModel)]="email" name="email" data-name="מייל" id="node-4" maxlength="256" placeholder="מייל עיסקי"  type="text">
+          <input class="w-input" [(ngModel)]="password" name="password" data-name="סיסמה" id="node-5" maxlength="256" placeholder="סיסמה"  type="password">
+          <input class="submit-button-3 w-button" [disabled]="afterSubmit" type="submit" value={{submitText}} >
+        </form>
+      </div>
+    </div>
+  </div> 

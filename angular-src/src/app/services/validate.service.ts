@@ -5,10 +5,18 @@ export class ValidateService {
 
   constructor() { }
 
-    validateRegister(user, isCompany){
+  validateRegister(user, isCompany){
     if(user.email == undefined || user.name == undefined || user.password == undefined){
       return false;
     } else if((isCompany == true) && (user.companyName == undefined)){
+      return false;
+    }else{
+      return true;
+    }
+  }
+
+  validateLogin(user){
+    if(user.email == undefined || user.password == undefined ){
       return false;
     }else{
       return true;

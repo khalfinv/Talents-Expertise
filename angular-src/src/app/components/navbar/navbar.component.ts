@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AuthService} from '../../services/auth.service';
 import {Router} from '@angular/router';
+import {GlobalsService} from '../../services/globals.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,8 @@ export class NavbarComponent implements OnInit {
 
   constructor(
     private authService:AuthService,
-    private router:Router,) { }
+    private router:Router,
+    private globals:GlobalsService) { }
 
   ngOnInit() {
   }
@@ -20,14 +22,5 @@ export class NavbarComponent implements OnInit {
     this.authService.logout();
     this.router.navigate(['/']);
     return false;
-  }
-
-  goToProfile(){
-    if(this.authService.companyLoggedIn()){
-      this.router.navigate(['/recuiter-profile']);
-    }
-    else{
-      this.router.navigate(['/candidate-profile']);
-    }
   }
 }

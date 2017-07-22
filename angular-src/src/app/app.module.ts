@@ -6,6 +6,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 import {FlashMessagesModule} from 'angular2-flash-messages';
+import {GlobalsService} from './services/globals.service';
 
 import { AppComponent } from './app.component';
 import { JobSearchRegisterComponent } from './components/job-search-register/job-search-register.component';
@@ -23,13 +24,13 @@ import { ProfileComponent } from './components/profile/profile.component';
 import {CompanyAuthGuard} from './guards/company-auth.guard';
 import {CandidateAuthGuard} from './guards/candidate-auth.guard';
 import { WorkWithPeopleComponent } from './components/work-with-people/work-with-people.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'job-search-register', component: JobSearchRegisterComponent},
   {path:'company-register', component: CompanyRegisterComponent},
-  {path:'login', component: LoginComponent},
   {path:'navbar', component: NavbarComponent},
   {path:'about', component: AboutComponent},
   {path:'contact', component: ContactComponent},
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     CandidateProfileComponent,
     RecuiterProfileComponent,
     ProfileComponent,
-    WorkWithPeopleComponent
+    WorkWithPeopleComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule
   ],
-  providers: [ValidateService, AuthService, CandidateAuthGuard, CompanyAuthGuard],
+  providers: [ValidateService, AuthService, CandidateAuthGuard, CompanyAuthGuard, GlobalsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
