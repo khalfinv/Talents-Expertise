@@ -452,6 +452,8 @@
   -ms-flex: 0 auto;
   flex: 0 auto;
   background-color: transparent;
+  background-image: -webkit-linear-gradient(270deg, #0e4163, #0e4163);
+  background-image: linear-gradient(180deg, #0e4163, #0e4163);
   font-family: 'Varela Round', sans-serif;
   color: #fff;
   font-size: 20px;
@@ -671,13 +673,23 @@
 }
 
 .looking-for-a-job-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 140px;
   margin: 19px;
   padding: 11px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 8px;
-  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
-  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+  background-color: #5fb878;
+  direction: rtl;
   font-size: 16px;
+  font-weight: 200;
+  text-align: center;
 }
 
 .recruiter-sign-wrapper {
@@ -1450,12 +1462,12 @@
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  background-image: -webkit-linear-gradient(270deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
-  background-image: linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, scroll;
+  background-image: -webkit-linear-gradient(270deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
+  background-image: linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
 }
 
 .hr {
@@ -3174,27 +3186,36 @@
   color: #fff;
 }
 
-.candidate-dynamic-content {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
+.location-block {
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  text-align: center;
 }
 
-.candidate-proifile-arears {
+.location-sub-block {
   position: absolute;
-  top: 75px;
+  left: 0px;
+  top: 0px;
   right: 0px;
-  bottom: 97px;
+  bottom: 0px;
+  z-index: 2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 15%;
+  margin-top: 100px;
+  padding-bottom: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3204,20 +3225,127 @@
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  background-image: -webkit-linear-gradient(270deg, #78a8b8, #78a8b8);
-  background-image: linear-gradient(180deg, #78a8b8, #78a8b8);
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
-.quick-notifications-block {
-  background-image: -webkit-linear-gradient(270deg, rgba(31, 224, 217, .5), rgba(31, 224, 217, .5));
-  background-image: linear-gradient(180deg, rgba(31, 224, 217, .5), rgba(31, 224, 217, .5));
+.south-area-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1px 35px 32px 1px;
+  padding: 77px 100px 150px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-.text-block-22 {
-  margin: 10px;
-  padding: 14px;
-  background-image: -webkit-linear-gradient(270deg, #dd7f28, #dd7f28);
-  background-image: linear-gradient(180deg, #dd7f28, #dd7f28);
+.text-block-23 {
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-style: none;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.haifa-area-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 1px 30px -54px;
+  padding: 0px 17px 17px 34px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.center-area-link {
+  display: block;
+  margin: 0px 0px 0px 15px;
+  padding: 31px 50px 85px 31px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.north-area-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -21px -99px -5px 0px;
+  padding: 0px 30px 30px 68px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.image-3 {
+  padding: 22px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 html.w-mod-js *[data-ix="hide-who-is-wrapper"] {
@@ -3298,6 +3426,7 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
   }
   .job-link {
     padding-top: 20%;
+
   }
   .subsection-wrapper-hospitality {
     margin-top: 0px;

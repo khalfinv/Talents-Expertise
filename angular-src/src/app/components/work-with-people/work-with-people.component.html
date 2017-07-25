@@ -1,13 +1,16 @@
-`<div class="main-section">
+
+  <div class="main-section">
     <div class="main-content">
-      <div class="subarea-block">
-        <a class="service-link w-inline-block" data-ix="service-block-show" href="#">
-          <div class="text-block-20" data-ix="service-block-show">שירות</div><img sizes="(max-width: 479px) 94vw, (max-width: 991px) 46vw, 455px" src="images/ibin-siraj-261547_Easy-Resize.com.jpg" srcset="images/ibin-siraj-261547_Easy-Resize.com-p-1080.jpeg 1080w, images/ibin-siraj-261547_Easy-Resize.com.jpg 1280w" width="455">
+      <div class="section-block">
+        <a class="service-llink-block w-inline-block" (click) = "globals.setCurrentSubJob('service')" [routerLink]="['/sub-jobs-section']">
+          <div class="hr">שירות</div>
+          <img sizes="(max-width: 767px) 93vw, 530px" src="images/ibin-siraj-261547_Easy-Resize.com.jpg" srcset="images/ibin-siraj-261547_Easy-Resize.com-p-1080.jpeg 1080w, images/ibin-siraj-261547_Easy-Resize.com.jpg 1280w" width="530">
         </a>
       </div>
-      <div class="subarea-block">
-        <a class="service-link w-inline-block" href="#">
-          <div class="text-block-20">אירוח וניקיון</div><img sizes="(max-width: 479px) 94vw, (max-width: 991px) 46vw, 455px" src="images/teapot-2174333_1920_Easy-Resize.com.jpg" srcset="images/teapot-2174333_1920_Easy-Resize.com-p-1080.jpeg 1080w, images/teapot-2174333_1920_Easy-Resize.com.jpg 1280w" width="455">
+      <div class="section-block">
+        <a class="hospitality-link-block w-inline-block" (click) = "globals.setCurrentSubJob('hospitality')" [routerLink]="['/sub-jobs-section']">
+          <img sizes="(max-width: 767px) 93vw, 530px" src="images/teapot-2174333_1920_Easy-Resize.com.jpg" srcset="images/teapot-2174333_1920_Easy-Resize.com-p-1080.jpeg 1080w, images/teapot-2174333_1920_Easy-Resize.com.jpg 1280w" width="530">
+          <div class="hospitality">אירוח וניקיון</div>
         </a>
       </div>
     </div>

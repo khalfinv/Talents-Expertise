@@ -25,6 +25,10 @@ import {CompanyAuthGuard} from './guards/company-auth.guard';
 import {CandidateAuthGuard} from './guards/candidate-auth.guard';
 import { WorkWithPeopleComponent } from './components/work-with-people/work-with-people.component';
 import { RegisterComponent } from './components/register/register.component';
+import { IndustryComponent } from './components/industry/industry.component';
+import { OrganizationalWorkComponent } from './components/organizational-work/organizational-work.component';
+import { ScienceAndMedicineComponent } from './components/science-and-medicine/science-and-medicine.component';
+import { SubJobsSectionComponent } from './components/sub-jobs-section/sub-jobs-section.component';
 
 
 const appRoutes: Routes = [
@@ -37,6 +41,10 @@ const appRoutes: Routes = [
   {path:'career-dev', component: CareerDevComponent},
   {path:'search-job', component: SearchJobComponent},
   {path:'work-with-people', component: WorkWithPeopleComponent},
+  {path:'industry', component: IndustryComponent},
+  {path:'organizational-work', component: OrganizationalWorkComponent},
+  {path:'science-and-medicine', component: ScienceAndMedicineComponent},
+  {path:'sub-jobs-section', component: SubJobsSectionComponent},
   {path:'candidate-profile', component: CandidateProfileComponent, canActivate:[CandidateAuthGuard]},
   {path:'recuiter-profile', component: RecuiterProfileComponent, canActivate:[CompanyAuthGuard]}
 
@@ -57,7 +65,11 @@ const appRoutes: Routes = [
     RecuiterProfileComponent,
     ProfileComponent,
     WorkWithPeopleComponent,
-    RegisterComponent
+    RegisterComponent,
+    IndustryComponent,
+    OrganizationalWorkComponent,
+    ScienceAndMedicineComponent,
+    SubJobsSectionComponent,
   ],
   imports: [
     BrowserModule,
