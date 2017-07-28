@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GlobalsService} from '../../services/globals.service';
 
 @Component({
   selector: 'app-search-job',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchJobComponent implements OnInit {
 
-  constructor() { }
+  constructor(private globals:GlobalsService) { }
 
   ngOnInit() {
   }

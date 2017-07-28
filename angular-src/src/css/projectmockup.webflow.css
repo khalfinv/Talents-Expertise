@@ -1462,12 +1462,12 @@
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
+  background-image: -webkit-linear-gradient(270deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
+  background-image: linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
   background-position: 0px 0px, 0px 0px;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
   background-attachment: scroll, scroll;
-  background-image: -webkit-linear-gradient(270deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
-  background-image: linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/ibin-siraj-261547_Easy-Resize.com.jpg');
 }
 
 .hr {
@@ -3131,61 +3131,6 @@
   font-size: 20px;
 }
 
-.candidate-profile-header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 1%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-linear-gradient(270deg, #2b5e6e, #2b5e6e);
-  background-image: linear-gradient(180deg, #2b5e6e, #2b5e6e);
-}
-
-.candidate-profile-section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 80vh;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  background-image: -webkit-linear-gradient(270deg, #d8e1e4, #d8e1e4);
-  background-image: linear-gradient(180deg, #d8e1e4, #d8e1e4);
-  font-family: 'Varela Round', sans-serif;
-  font-size: 25px;
-}
-
-.candidate-id {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px;
-}
-
-.text-block-21 {
-  color: #fff;
-}
-
 .location-block {
   display: block;
   -webkit-box-pack: center;
@@ -3348,6 +3293,682 @@
   flex: 0 auto;
 }
 
+.candiadte-profile-main-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.candidate-profile-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-image: -webkit-linear-gradient(270deg, rgba(221, 127, 40, .2), rgba(221, 127, 40, .2)), url('../images/andrew-ridley-76547.png');
+  background-image: linear-gradient(180deg, rgba(221, 127, 40, .2), rgba(221, 127, 40, .2)), url('../images/andrew-ridley-76547.png');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, 1000px;
+}
+
+.dynamic-content-block {
+  min-height: 80%;
+  margin-top: 0px;
+  margin-left: 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-radius: 0px;
+  background-image: -webkit-linear-gradient(270deg, rgba(227, 237, 241, .5), rgba(227, 237, 241, .5));
+  background-image: linear-gradient(180deg, rgba(227, 237, 241, .5), rgba(227, 237, 241, .5));
+}
+
+.candidate-profile-menu-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-style: none;
+  border-left-width: 1px;
+  border-left-color: #2b5e6e;
+  background-image: -webkit-linear-gradient(270deg, #0e4163, #0e4163);
+  background-image: linear-gradient(180deg, #0e4163, #0e4163);
+}
+
+.candidate-profile-messages-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  padding: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  border-style: none;
+  direction: rtl;
+  font-size: 18px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.candidate-profile-messages-block:hover {
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.text-block-24 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border: 1px none #000;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #272222;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.dropdown-toggle {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  float: none;
+}
+
+.dropdown-toggle:hover {
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.text-block-25 {
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+}
+
+.text-block-26 {
+  padding-right: 31px;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.image-4 {
+  margin: 10px;
+}
+
+.candidate-education-link {
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  text-align: right;
+}
+
+.candidate-education-link:hover {
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.dropdown-link {
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  text-align: right;
+}
+
+.dropdown-link:hover {
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.dropdown-link-2 {
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  text-align: right;
+}
+
+.dropdown-link-2:hover {
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.link-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.candidate-name-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.text-block-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 23px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(270deg, transparent, transparent);
+  background-image: linear-gradient(180deg, transparent, transparent);
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+}
+
+.candidate-education-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 47px;
+  padding-right: 39px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  direction: rtl;
+}
+
+.icon-2 {
+  color: #fff;
+}
+
+.candidate-education-form-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-block-28 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-block-29 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  font-size: 16px;
+  text-align: right;
+}
+
+.text-block-30 {
+  text-align: center;
+}
+
+.text-block-31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 16px 16px;
+}
+
+.text-block-32 {
+  display: block;
+  padding: 0px 10px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-block-33 {
+  padding: 0px 14px 14px;
+}
+
+.text-block-34 {
+  padding: 0px 18px 18px;
+}
+
+.div-block-16 {
+  min-height: 100vh;
+  background-image: -webkit-linear-gradient(270deg, #2b5e6e, #2b5e6e);
+  background-image: linear-gradient(180deg, #2b5e6e, #2b5e6e);
+}
+
+.job-post-content-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin: 1px;
+  padding: 0px 15px 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.job-post-main-section-block {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/isaac-benhesed-249427.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.job-post-filter-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.form-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #d8e1e4;
+  font-weight: 200;
+  text-align: right;
+}
+
+.field-label-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #0e4163;
+}
+
+.field-label-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  color: #0e4163;
+}
+
+.textarea {
+  height: 300px;
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.textarea-2 {
+  border: 1px solid #000;
+  text-align: right;
+}
+
+.text-field-4 {
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.job-block-lists-blok {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.form-block-6 {
+  display: block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: right;
+}
+
+.form-block-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.text-field-5 {
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.text-field-6 {
+  width: 200px;
+  border: 1px solid #000;
+}
+
+.button-3 {
+  margin-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+}
+
+.heading-13 {
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  font-weight: 100;
+  text-align: right;
+}
+
+.action-buttons-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.job-post-button {
+  margin: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+  background-image: linear-gradient(180deg, #5fb878, #5fb878);
+  font-family: 'Varela Round', sans-serif;
+}
+
+.job-post-preview-button {
+  margin: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: -webkit-linear-gradient(270deg, #d8e1e4, #d8e1e4);
+  background-image: linear-gradient(180deg, #d8e1e4, #d8e1e4);
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+}
+
+.job-post-recruiter-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 493px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.heading-14 {
+  font-family: 'Varela Round', sans-serif;
+  color: #0e4163;
+  font-weight: 200;
+}
+
+.div-block-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.div-block-18 {
+  margin: 23px;
+}
+
 html.w-mod-js *[data-ix="hide-who-is-wrapper"] {
   display: none;
   opacity: 0;
@@ -3426,7 +4047,6 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
   }
   .job-link {
     padding-top: 20%;
-
   }
   .subsection-wrapper-hospitality {
     margin-top: 0px;
@@ -3726,5 +4346,132 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
   }
   .carrier-path-test-1 {
     margin: 1px;
+  }
+  .candiadte-profile-main-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  .dynamic-content-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .candidate-profile-menu-block {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .candidate-profile-messages-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  .candidate-education-wrapper {
+    padding-right: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .job-post-content-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  .job-post-main-section-block {
+    padding: 0px;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    background-position: 50% 0px;
+  }
+  .form-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .action-buttons-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  .job-post-recruiter-data {
+    margin-left: 0px;
+    padding-top: 11px;
   }
 }

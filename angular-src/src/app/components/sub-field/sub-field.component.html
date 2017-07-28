@@ -1,0 +1,12 @@
+
+  <div class="main-section">
+    <div class="main-content">
+      <div class="section-block" *ngFor="let subFieldData of subFields[globals.currentSubField]">
+        <a class="hospitality-link-block w-inline-block" (click) = "globals.currentSubSubField = subFieldData.subSubField" [routerLink]="['/sub-sub-field']">
+          <div class="sub-field">{{subFieldData.name}}</div>
+          <img sizes="(max-width: 767px) 93vw, 530px" src="images/{{subFieldData.image}}.jpg" width="530">
+        </a>
+      </div>
+    </div>
+  </div>
+

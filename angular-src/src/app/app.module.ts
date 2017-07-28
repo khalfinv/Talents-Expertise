@@ -9,8 +9,6 @@ import {FlashMessagesModule} from 'angular2-flash-messages';
 import {GlobalsService} from './services/globals.service';
 
 import { AppComponent } from './app.component';
-import { JobSearchRegisterComponent } from './components/job-search-register/job-search-register.component';
-import { CompanyRegisterComponent } from './components/company-register/company-register.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -20,7 +18,6 @@ import { CareerDevComponent } from './components/career-dev/career-dev.component
 import { SearchJobComponent } from './components/search-job/search-job.component';
 import { CandidateProfileComponent } from './components/candidate-profile/candidate-profile.component';
 import { RecuiterProfileComponent } from './components/recuiter-profile/recuiter-profile.component';
-import { ProfileComponent } from './components/profile/profile.component';
 import {CompanyAuthGuard} from './guards/company-auth.guard';
 import {CandidateAuthGuard} from './guards/candidate-auth.guard';
 import { WorkWithPeopleComponent } from './components/work-with-people/work-with-people.component';
@@ -28,13 +25,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { IndustryComponent } from './components/industry/industry.component';
 import { OrganizationalWorkComponent } from './components/organizational-work/organizational-work.component';
 import { ScienceAndMedicineComponent } from './components/science-and-medicine/science-and-medicine.component';
-import { SubJobsSectionComponent } from './components/sub-jobs-section/sub-jobs-section.component';
+import { SubSubFieldComponent } from './components/sub-sub-field/sub-sub-field.component';
+import { OutsideOfficeComponent } from './components/outside-office/outside-office.component';
+import { SubFieldComponent } from './components/sub-field/sub-field.component';
 
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'job-search-register', component: JobSearchRegisterComponent},
-  {path:'company-register', component: CompanyRegisterComponent},
   {path:'navbar', component: NavbarComponent},
   {path:'about', component: AboutComponent},
   {path:'contact', component: ContactComponent},
@@ -44,7 +41,8 @@ const appRoutes: Routes = [
   {path:'industry', component: IndustryComponent},
   {path:'organizational-work', component: OrganizationalWorkComponent},
   {path:'science-and-medicine', component: ScienceAndMedicineComponent},
-  {path:'sub-jobs-section', component: SubJobsSectionComponent},
+  {path:'sub-sub-field', component: SubSubFieldComponent},
+  {path:'sub-field', component: SubFieldComponent},
   {path:'candidate-profile', component: CandidateProfileComponent, canActivate:[CandidateAuthGuard]},
   {path:'recuiter-profile', component: RecuiterProfileComponent, canActivate:[CompanyAuthGuard]}
 
@@ -52,8 +50,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    JobSearchRegisterComponent,
-    CompanyRegisterComponent,
     LoginComponent,
     HomeComponent,
     NavbarComponent,
@@ -63,13 +59,14 @@ const appRoutes: Routes = [
     SearchJobComponent,
     CandidateProfileComponent,
     RecuiterProfileComponent,
-    ProfileComponent,
     WorkWithPeopleComponent,
     RegisterComponent,
     IndustryComponent,
     OrganizationalWorkComponent,
     ScienceAndMedicineComponent,
-    SubJobsSectionComponent,
+    SubSubFieldComponent,
+    OutsideOfficeComponent,
+    SubFieldComponent,
   ],
   imports: [
     BrowserModule,

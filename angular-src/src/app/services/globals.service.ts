@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {AuthService} from './auth.service';
 import {Router} from '@angular/router';
 
-export enum Criteria {
+export enum subSubCriteria {
   medicine = 0 ,
   science,
   socialScience,
@@ -13,14 +13,28 @@ export enum Criteria {
   industry,
   finance,
   humanResource,
-  administration
+  administration,
+  nature,
+  security
+}
+
+export enum subCriteria {
+  workWithPeople = 0 ,
+  scienceAndMedicine,
+  outSideOffice,
+  organizationalWork,
+  industry,
+  education,
+  business,
+  creativeWork,
 }
 
 @Injectable()
 export class GlobalsService {
   showWrapperWho: Boolean;
   showLoginWrapper: Boolean;
-  currentSubJob: Criteria;
+  currentSubSubField: subSubCriteria;
+  currentSubField: subCriteria;
   constructor(private authService:AuthService,
     private router: Router) {  }
 
@@ -33,9 +47,13 @@ export class GlobalsService {
     }
   }
 
+  setCurrentSubSubJob(currentSubSubJob: string){
+    console.log("currentSubSubJob:" + currentSubSubJob);
+    this.currentSubSubField = subSubCriteria[currentSubSubJob];
+  }
   setCurrentSubJob(currentSubJob: string){
-    console.log(currentSubJob);
-    this.currentSubJob = Criteria[currentSubJob];
+    console.log("currentSubJob: " + currentSubJob);
+    this.currentSubField = subCriteria[currentSubJob];
   }
 
 }

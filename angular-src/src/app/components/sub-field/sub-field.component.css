@@ -1,0 +1,20 @@
+.sub-field-link-block {
+  position: static;
+  background-color: #39aca7;
+}
+
+.sub-field {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 50%;
+  background-image: -webkit-linear-gradient(270deg, rgba(53, 170, 175, .3), rgba(53, 170, 175, .3));
+  background-image: linear-gradient(180deg, rgba(53, 170, 175, .3), rgba(53, 170, 175, .3));
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+  text-align: center;
+}
