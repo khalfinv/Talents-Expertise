@@ -1,0 +1,51 @@
+.my-hero-section {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 87vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(270deg, rgba(47, 57, 78, .3), rgba(47, 57, 78, .3)), url('../images/katie-treadway-253591.jpg'), -webkit-linear-gradient(128deg, #0e4163, #39aca7);
+  background-image: linear-gradient(180deg, rgba(47, 57, 78, .3), rgba(47, 57, 78, .3)), url('../images/katie-treadway-253591.jpg'), linear-gradient(322deg, #0e4163, #39aca7);
+  background-position: 0px 0px, 50% 100%, 0px 0px;
+  background-size: auto, cover, auto;
+  background-attachment: scroll, scroll, scroll;
+}
+
+.my-hero-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}

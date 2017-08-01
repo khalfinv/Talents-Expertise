@@ -20,13 +20,8 @@ import { CandidateProfileComponent } from './components/candidate-profile/candid
 import { RecuiterProfileComponent } from './components/recuiter-profile/recuiter-profile.component';
 import {CompanyAuthGuard} from './guards/company-auth.guard';
 import {CandidateAuthGuard} from './guards/candidate-auth.guard';
-import { WorkWithPeopleComponent } from './components/work-with-people/work-with-people.component';
 import { RegisterComponent } from './components/register/register.component';
-import { IndustryComponent } from './components/industry/industry.component';
-import { OrganizationalWorkComponent } from './components/organizational-work/organizational-work.component';
-import { ScienceAndMedicineComponent } from './components/science-and-medicine/science-and-medicine.component';
 import { SubSubFieldComponent } from './components/sub-sub-field/sub-sub-field.component';
-import { OutsideOfficeComponent } from './components/outside-office/outside-office.component';
 import { SubFieldComponent } from './components/sub-field/sub-field.component';
 
 
@@ -37,10 +32,6 @@ const appRoutes: Routes = [
   {path:'contact', component: ContactComponent},
   {path:'career-dev', component: CareerDevComponent},
   {path:'search-job', component: SearchJobComponent},
-  {path:'work-with-people', component: WorkWithPeopleComponent},
-  {path:'industry', component: IndustryComponent},
-  {path:'organizational-work', component: OrganizationalWorkComponent},
-  {path:'science-and-medicine', component: ScienceAndMedicineComponent},
   {path:'sub-sub-field', component: SubSubFieldComponent},
   {path:'sub-field', component: SubFieldComponent},
   {path:'candidate-profile', component: CandidateProfileComponent, canActivate:[CandidateAuthGuard]},
@@ -59,13 +50,8 @@ const appRoutes: Routes = [
     SearchJobComponent,
     CandidateProfileComponent,
     RecuiterProfileComponent,
-    WorkWithPeopleComponent,
     RegisterComponent,
-    IndustryComponent,
-    OrganizationalWorkComponent,
-    ScienceAndMedicineComponent,
     SubSubFieldComponent,
-    OutsideOfficeComponent,
     SubFieldComponent,
   ],
   imports: [

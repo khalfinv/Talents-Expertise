@@ -1,5 +1,5 @@
   <div class="wrapper-who-is" *ngIf="this.globals.showWrapperWho">
-    <div class="whois-block"><a class="i-am-hiring-button w-button" (click) = "(showRecruiterWrapper = true) && (isCompany = true)">אני מגייס</a><a class="looking-for-a-job-button w-button" (click) = "(showCandidateWrapper = true) && (isCompany = false)">אני מחפש עבודה</a>
+    <div class="whois-block"><a class="button" (click) = "(showRecruiterWrapper = true) && (isCompany = true)">אני מגייס</a><a class="button" (click) = "(showCandidateWrapper = true) && (isCompany = false)">אני מחפש עבודה</a>
     </div>
   </div>
   <div class="candidate-wrapper" *ngIf="showCandidateWrapper">

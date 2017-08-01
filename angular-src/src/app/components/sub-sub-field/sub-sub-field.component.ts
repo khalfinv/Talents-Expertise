@@ -16,61 +16,93 @@ export class SubSubFieldComponent implements OnInit {
     console.log("Enter on constructore");
     this.subSubJobFields = new Map;
     this.subSubJobFields[subSubCriteria.medicine] = {
-      imageUrl : "294c28_b9de5ee990d246dfae38c219eec586aa-mv2_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.medicine] + ".jpg",
       names : ["עובד מעבדה רפואית","סייעות שיניים","טכנאי רנטגן","דיאטנית","פראמדיק","אחות","רופא","רוקחות","פיזיוטרפיה"]
     };
     this.subSubJobFields[subSubCriteria.science] = {
-      imageUrl : "294c28_bdaf28e1124e41ad8c94acaa0bbca2c4-mv2_d_5184_3456_s_4_2_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.science] + ".jpg",
       names : ["כימאי","מתמטיקאי","עוזר מחקר","פיתוח אלגוריתמים","סטטיסטיקאי","פיזיקאי","ניהול מחקר"]
     } 
     this.subSubJobFields[subSubCriteria.socialScience] = {
-      imageUrl : "rsz_294c28_779783bc8ee24f24863ba17614808d98-mv2_d_5013_4634_s_4_2.png",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.socialScience] + ".png",
       names :  ["סוציאלוג","אנטרופולוג","סוקר שטח","בלשן","ספרן"]
     } 
     this.subSubJobFields[subSubCriteria.hospitality] = {
-      imageUrl : "teapot-2174333_1920_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.hospitality] + ".jpg",
       names : ["מלצר","מדריך תיירות","עובד ניקיון","שף","פקיד קבלה","ברמן","עובד מטבח","צוות הוואי ובידור","מנהל מלון"]
     } ;
     this.subSubJobFields[subSubCriteria.service] = {
-      imageUrl : "ibin-siraj-261547_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.service] + ".jpg",
       names : ["מדריך ספורט","מטפל סיעודי","יופי וטיפוח","מורה פרטי","רפואה משלימה","קואצ'ר","עובד סוציאלי","פסיכולוג","מדריך שיקומי"]
     }
     this.subSubJobFields[subSubCriteria.transport] = {
-      imageUrl : "1_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.transport] + ".jpg",
       names : ["מלח","שליח","נהג","מהנדס תחבורה","חובל","טייס","מנהל מוסך"]
     }
     this.subSubJobFields[subSubCriteria.industry] = {
-      imageUrl : "chester-alvarez-644_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.industry] + ".jpg",
       names : ["מתקין","חשמלאי","אבטחת איכות","עובד ייצור","מנהל עבודה","מחסנאי","עובד בניין", "מכונאי", "ממונה בטיחות", "מפקח בנייה", "קניין", "לבורנט", "מנהל פרוייקטים", "מנהל מפעל", "מנהל מעבדה", "מהנדס ייצור"]
     }
     this.subSubJobFields[subSubCriteria.technology] = {
-      imageUrl : "294c28_8e607e8f21724436affe7b670964f225-mv2_d_5616_3744_s_4_2_Easy-Resize.com.jpg",
-      names : ["מהנדס תוכנה","בודק תוכנה","מנהל רשת",'חוקר מו"פ',"מהנדס מערכות מידע","מפתח WEB","מהנדס מכונות", "מהנדס כימיה", "מהנדס חשמל ואלקטרוניקה", "מהנדס ביוטכנלוגיה", "מהנדס תעשייה וניהול"]
+      imageUrl : this.globals.fieldsImages[subSubCriteria.technology] + ".jpg",
+      names : ["מהנדס תוכנה","בודק תוכנה","מנהל רשת",'חוקר מו"פ',"מהנדס מערכות מידע","מפתח WEB","מהנדס מכונות",
+       "מהנדס כימיה", "מהנדס חשמל ואלקטרוניקה", "מהנדס ביוטכנלוגיה", "מהנדס תעשייה וניהול"]
     }
     this.subSubJobFields[subSubCriteria.finance] = {
-      imageUrl : "294c28_8e607e8f21724436affe7b670964f225-mv2_d_5616_3744_s_4_2_Easy-Resize.com.jpg",
-      names : ["יועץ השקעות","חשב שכר","פקיד גבייה","בנקאי","אנליסט","שמאי","סוכן ביטוח", "רואה חשבון"]
-    }
-    this.subSubJobFields[subSubCriteria.finance] = {
-      imageUrl : "ben-white-197668_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.finance] + ".jpg",
       names : ["יועץ השקעות","חשב שכר","פקיד גבייה","בנקאי","אנליסט","שמאי","סוכן ביטוח", "רואה חשבון"]
     }
     this.subSubJobFields[subSubCriteria.humanResource] = {
-      imageUrl : "6021688217_5f1faa3c82_b_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.humanResource] + ".jpg",
       names : ["מנהל משאבי אנוש","רכז אבחון והשמה","רכז הדרכה","רכז משאבי אנוש","מנהל מערך הדרכה","יועץ ארגוני"]
     }
     this.subSubJobFields[subSubCriteria.administration] = {
-      imageUrl : "294c28_03046c66df654115a7ebe267f60cea62-mv2_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.administration] + ".jpg",
       names : ["רפרנט רגולציה","מנהל משרד","מזכיר","נציג בק אופיס","מנהל לוגיסטיקה","מתאם לוגיסטי"]
     }
     this.subSubJobFields[subSubCriteria.nature] = {
-      imageUrl : "vladimir-kudinov-12755_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.nature] + ".jpg",
       names : ["אגרונום","גנן","עובד חקלאות","גאולוג","טיפול בבעלי חיים"]
     }
     this.subSubJobFields[subSubCriteria.security] = {
-      imageUrl : "vladimir-kudinov-12755_Easy-Resize.com.jpg",
+      imageUrl : this.globals.fieldsImages[subSubCriteria.security] + ".jpg",
       names : ["מוקד בטחון","שוטר","מאבטח","מנהל בטחון","מנהל משמרת אבטחה", "קצין בטחון"]
     }
+    this.subSubJobFields[subSubCriteria.entertainment] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.entertainment] + ".jpg",
+      names : ["שחקן","רקדן","תאורן","איש סאונד","במאי", "מוזיקאי"]
+    }
+    this.subSubJobFields[subSubCriteria.writingAndCommunication] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.writingAndCommunication] + ".jpg",
+      names : ["עורך","עיתונאי","כותב תוכן","מתרגם","סופר"]
+    }
+    this.subSubJobFields[subSubCriteria.creation] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.creation] + ".jpg",
+      names : ["מעצב פנים","מעצב גראפי","צייר","צלם","אדריכל","הנדסאי אדריכלות"]
+    }
+    this.subSubJobFields[subSubCriteria.management] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.management] + ".jpg",
+      names : ["מנהל פיתוח עיסקי","מנהל סניף בקמעונאות","מנהל מוקד שירות","זכיין","מנהל כללי","שותף",'סמנכ"ל']
+    }
+    this.subSubJobFields[subSubCriteria.law] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.law] + ".com.jpg",
+      names : ["יועץ משפטי","בורר","עורך דין","מתמחה משרד עורכי דין","שופט"]
+    }
+    this.subSubJobFields[subSubCriteria.marketingAndSales] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.marketingAndSales] + ".jpg",
+      names : ["מנהל תיק לקוח","קופאי","נציג מכירות","נציג שירות","מנהל קריאטיבי",
+      "קופירייטר", "מקדם אתרים", 'יועץ נדל"ן', "מנהל יחסי ציבור","מנהל שיווק"]
+    }
+    this.subSubJobFields[subSubCriteria.education] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.education] + ".jpg",
+      names : ["מורה","מדריך חברתי","גננת","מורה פרטי","חינוך מיוחד","רכז הדרכה",
+      "מנהל בית הספר","מרצה"]
+    }
+    this.subSubJobFields[subSubCriteria.religion] = {
+      imageUrl : this.globals.fieldsImages[subSubCriteria.religion] + ".jpg",
+      names : ["מלמד","שוחט","משגיח כשרות","רב"]
+    }
+
   }
 
   ngOnInit() {

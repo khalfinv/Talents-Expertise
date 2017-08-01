@@ -1,6 +1,6 @@
 <div class="main-section">
     <div class="subsection-wrapper" [ngStyle]="{'background-image' : 'linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)) , url(../images/' + subSubJobFields[globals.currentSubSubField].imageUrl + ')'}">
-        <div  class="job-block" *ngFor="let subSubField of subSubJobFields[globals.currentSubSubField].names" >
+        <div  [ngClass]="{'job-block-small': subSubJobFields[globals.currentSubSubField].names.length >= 9, 'job-block': subSubJobFields[globals.currentSubSubField].names.length < 9 }" *ngFor="let subSubField of subSubJobFields[globals.currentSubSubField].names" >
           <a class="job-link my-button" >{{subSubField}} </a>
         </div>
     </div>

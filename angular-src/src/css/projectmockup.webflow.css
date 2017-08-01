@@ -4,7 +4,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 87vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -548,7 +548,7 @@
   left: 0px;
   top: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 150px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1325,7 +1325,7 @@
 .section-block {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   margin-left: 0px;
   border: 1px solid #fff;
   background-color: #0098ff;
