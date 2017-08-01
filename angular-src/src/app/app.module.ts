@@ -23,6 +23,7 @@ import {CandidateAuthGuard} from './guards/candidate-auth.guard';
 import { RegisterComponent } from './components/register/register.component';
 import { SubSubFieldComponent } from './components/sub-sub-field/sub-sub-field.component';
 import { SubFieldComponent } from './components/sub-field/sub-field.component';
+import { IAmHiringComponent } from './components/i-am-hiring/i-am-hiring.component';
 
 
 const appRoutes: Routes = [
@@ -34,6 +35,7 @@ const appRoutes: Routes = [
   {path:'search-job', component: SearchJobComponent},
   {path:'sub-sub-field', component: SubSubFieldComponent},
   {path:'sub-field', component: SubFieldComponent},
+  {path:'i-am-hiring', component: IAmHiringComponent},
   {path:'candidate-profile', component: CandidateProfileComponent, canActivate:[CandidateAuthGuard]},
   {path:'recuiter-profile', component: RecuiterProfileComponent, canActivate:[CompanyAuthGuard]}
 
@@ -53,6 +55,7 @@ const appRoutes: Routes = [
     RegisterComponent,
     SubSubFieldComponent,
     SubFieldComponent,
+    IAmHiringComponent,
   ],
   imports: [
     BrowserModule,
