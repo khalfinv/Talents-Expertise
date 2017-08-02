@@ -24,6 +24,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { SubSubFieldComponent } from './components/sub-sub-field/sub-sub-field.component';
 import { SubFieldComponent } from './components/sub-field/sub-field.component';
 import { IAmHiringComponent } from './components/i-am-hiring/i-am-hiring.component';
+import { IsraelMapComponent } from './components/israel-map/israel-map.component';
 
 
 const appRoutes: Routes = [
@@ -56,6 +57,7 @@ const appRoutes: Routes = [
     SubSubFieldComponent,
     SubFieldComponent,
     IAmHiringComponent,
+    IsraelMapComponent,
   ],
   imports: [
     BrowserModule,

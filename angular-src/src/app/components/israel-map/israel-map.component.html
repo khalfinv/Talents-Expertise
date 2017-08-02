@@ -1,0 +1,15 @@
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 800">
+  <svg:path
+    *ngFor="let country of countries; let i = index"
+    [attr.data-index]="i"
+    (mouseover)="countryHover = country.country_country"
+    (click)="clicked(i)"
+    class="blob"
+    [class.selected]="hasCountry(i)"
+    [attr.d]="country.country_path"
+    fill="currentColor">
+  </svg:path>
+</svg>

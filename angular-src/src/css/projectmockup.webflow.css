@@ -844,22 +844,22 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 0px;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-wrap: wrap-reverse;
-  -ms-flex-wrap: wrap-reverse;
-  flex-wrap: wrap-reverse;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -1325,7 +1325,7 @@
 .section-block {
   position: relative;
   margin-right: 30px;
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   margin-left: 0px;
   border: 1px solid #fff;
   background-color: #0098ff;
@@ -1418,8 +1418,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0%;
-  padding-bottom: 0px;
+  height: 150px;
+  padding: 0% 0px 0px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -3681,14 +3681,14 @@
   min-height: 100vh;
   padding: 50px;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -3696,9 +3696,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/isaac-benhesed-249427.jpg');
-  background-position: 0px 0px;
-  background-size: cover;
+  background-image: -webkit-linear-gradient(270deg, #d8e1e4, #d8e1e4), -webkit-linear-gradient(33deg, #0e4163, #5fb878);
+  background-image: linear-gradient(180deg, #d8e1e4, #d8e1e4), linear-gradient(57deg, #0e4163, #5fb878);
 }
 
 .job-post-filter-block {
@@ -3969,6 +3968,386 @@
   margin: 23px;
 }
 
+.image-5 {
+  display: inline;
+}
+
+.search-by-clusters-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 23px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.job-search-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.field-label-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.field-label-5 {
+  margin: 1px 10px;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+}
+
+.field-label-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+}
+
+.text-field-7 {
+  text-align: right;
+}
+
+.text-field-8 {
+  text-align: right;
+}
+
+.text-field-9 {
+  margin-left: 10px;
+  text-align: right;
+}
+
+.submit-button-8 {
+  width: 0px;
+  margin: 20px;
+  padding: 5px 30px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.button-4 {
+  margin-bottom: 8px;
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+.job-post-list-block {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  right: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  margin-top: 0%;
+  padding-top: 10%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  background-image: -webkit-linear-gradient(270deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/6021688217_5f1faa3c82_b_Easy-Resize.com.jpg');
+  background-image: linear-gradient(180deg, rgba(43, 94, 110, .5), rgba(43, 94, 110, .5)), url('../images/6021688217_5f1faa3c82_b_Easy-Resize.com.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  background-attachment: scroll, scroll;
+}
+
+.job-posts-list-blok {
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  right: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  margin-top: 0%;
+  padding-top: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  background-image: -webkit-linear-gradient(270deg, #d8e1e4, #d8e1e4);
+  background-image: linear-gradient(180deg, #d8e1e4, #d8e1e4);
+}
+
+.job-post-block {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(270deg, #35c5c5, #35c5c5);
+  background-image: linear-gradient(180deg, #35c5c5, #35c5c5);
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+.job-title-text {
+  margin-bottom: 0px;
+  padding: 2px;
+  font-family: 'Varela Round', sans-serif;
+  color: #2b5e6e;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.company-logio-image {
+  border-radius: 5px;
+}
+
+.company-name-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-family: 'Varela Round', sans-serif;
+  color: #2b5e6e;
+  font-size: 16px;
+}
+
+.job-post-publish-date {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  font-family: 'Varela Round', sans-serif;
+  color: #2b5e6e;
+}
+
+.job-location-text {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  font-family: 'Varela Round', sans-serif;
+  color: #2b5e6e;
+  font-size: 16px;
+}
+
+.company-id-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text-block-35 {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: -2px;
+}
+
+.button-5 {
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.job-post-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin: 0px 8px 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: #d8e1e4 #fff #fff;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(135deg, rgba(48, 87, 82, .2), #fff);
+  background-image: linear-gradient(315deg, rgba(48, 87, 82, .2), #fff);
+  box-shadow: 1px 1px 3px 0 #000;
+  text-decoration: none;
+}
+
+.job-title-post-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: none;
+  border-top-width: 1px;
+  border-top-color: #000;
+}
+
 html.w-mod-js *[data-ix="hide-who-is-wrapper"] {
   display: none;
   opacity: 0;
@@ -4007,11 +4386,6 @@ html.w-mod-js *[data-ix="hide-plus-icon"] {
 }
 
 html.w-mod-js *[data-ix="hide-hospitality-rapper"] {
-  display: none;
-  opacity: 0;
-}
-
-html.w-mod-js *[data-ix="hide-education-wrapper"] {
   display: none;
   opacity: 0;
 }
@@ -4104,6 +4478,18 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
     margin-top: 0px;
     padding-top: 100px;
   }
+  .job-post-list-block {
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+  .job-posts-list-blok {
+    margin-top: 0px;
+    padding-top: 100px;
+  }
+  .job-post-block {
+    width: 350px;
+    height: 150px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4112,6 +4498,10 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
     height: 150px;
   }
   .job-block-small {
+    width: 200px;
+    height: 150px;
+  }
+  .job-post-block {
     width: 200px;
     height: 150px;
   }
@@ -4441,20 +4831,53 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
   }
   .job-post-main-section-block {
     padding: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    background-position: 50% 0px;
+  }
+  .job-description-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  .job-responsibility-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .form-2 {
     -webkit-box-orient: vertical;
@@ -4463,7 +4886,18 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .heading-13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
   .action-buttons-block {
+    padding-right: 72px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
@@ -4473,5 +4907,55 @@ html.w-mod-js *[data-ix="hide-service-wrapper"] {
   .job-post-recruiter-data {
     margin-left: 0px;
     padding-top: 11px;
+  }
+  .div-block-17 {
+    padding-right: 19px;
+  }
+  .paragraph-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .search-by-clusters-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 5px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .form-5 {
+    margin: 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .text-field-9 {
+    margin-left: 0px;
+  }
+  .button-4 {
+    width: 150px;
+    background-image: -webkit-linear-gradient(270deg, #5fb878, #5fb878);
+    background-image: linear-gradient(180deg, #5fb878, #5fb878);
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+  }
+  .job-post-block {
+    width: 250px;
+    height: 80px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
   }
 }
